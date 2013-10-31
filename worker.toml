@@ -1,0 +1,6 @@
+[queue]
+broker = "amqp://guest@localhost//"
+backend = "amqp"
+
+[moses-servers]
+es = [ "http://localhost:8080/RPC2" ]
