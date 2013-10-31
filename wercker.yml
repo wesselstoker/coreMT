@@ -5,13 +5,11 @@ build:
   steps:
     #- apt-get -y install python3-pip
     # A step that executes `pip install` command
-    #- pip-3.3-install
+    - pip3-install
 
     # A custom script step, name value is used in the UI
     # and the code value contains the command that get executed
     - script:
         name: run index.py
         code: |
-          apt-get -y install python3-pip
-          pip-3.3 install -r requirements.txt
           python3 index.py
