@@ -1,4 +1,4 @@
 coreMT
 ======
 
-Easy management of statistical machine translation clusters.
+Easy management of machine translation clusters.
