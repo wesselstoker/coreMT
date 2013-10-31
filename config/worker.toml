@@ -2,5 +2,8 @@
 broker = "amqp://guest@localhost//"
 backend = "amqp"
 
+[etcd]
+connection_string = "http://localhost:4001/v1/keys/"
+
 [moses-servers]
 es = [ "http://localhost:8080/RPC2" ]

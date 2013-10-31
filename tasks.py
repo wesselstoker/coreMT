@@ -26,7 +26,7 @@ celery.conf.update(
 def translate(text, language):
     ## Choose random server from the server list.
     ## TODO: Make this less ugly :)
-    result = json.loads(requests.get("http://localhost:4001/v1/keys/language:{0}".format(language)).text)
+    result = json.loads(requests.get(config["etcd"]["connection_string"]+"language:{0}".format(language)).text)
     server = choice(json.loads(result["value"])["servers"])
 
     proxy = xmlrpc.client.ServerProxy(server)
