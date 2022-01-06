@@ -7,7 +7,7 @@ amqp==1.0.13
 anyjson==0.3.3
 billiard==3.3.0.0
 bpython==0.12
-celery==3.0.24
+celery==5.2.2
 etcd-py==0.0.5
 itsdangerous==0.23
 kombu==2.5.16
